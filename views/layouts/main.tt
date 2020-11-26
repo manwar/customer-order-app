@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title"       content="Mohammad S Anwar - Author/Contributor/Editor/Speaker/Father"/>
+    <meta property="og:type"        content="website"/>
+    <meta property="og:url"         content="http://www.manwar.org/"/>
+    <meta property="og:image"       content="http://www.manwar.org/images/manwar.jpg"/>
+    <meta property="og:description" content="Mohammad S Anwar - Author/Contributor/Editor/Speaker/Father"/>
+    <meta name="twitter:card"       content="summary" />
+    <meta name="twitter:image"      content="http://www.manwar.org/images/manwar.jpg"/>
+
+    <title>Mohammad S Anwar (MANWAR)</title>
+    <meta name="description" content="Mohammad S Anwar - Author/Contributor/Editor/Speaker/Father"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <!-- link rel="stylesheet" href="http://www.manwar.org/css/fontawesome.5.14.0.min.css"/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"/>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109040671-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-109040671-1');
+
+      function blinker() {
+          $('.blink_me').fadeOut(500);
+          $('.blink_me').fadeIn(500);
+      }
+      setInterval(blinker, 1000);
+
+    </script>
+</head>
+
+<style>
+    body {
+        padding-top: 51px;
+    }
+
+    .section_header {
+        text-align: center;
+        width: auto;
+        background-size: cover;
+        border-radius: 0 0 85% 85% / 30%;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #333;
+        background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+        font-family: 'Dancing Script', cursive;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .addon-image {
+        left: 2%;
+        top: 1%;
+        position: absolute;
+        margin-top: -25px;
+        margin-left: -25px;
+    }
+
+    .no-padding {
+        padding-left: 0;
+    padding-right: 0;
+    }
+
+    .spinner {
+        display: none;
+        width:100px;
+        height: 100px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        text-align:center;
+        margin-left: -50px;
+        margin-top: -100px;
+        z-index:2;
+        overflow: auto;
+    }
+
+    .rainbow {
+        background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+        background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+</style>
+
+<body data-spy="scroll" data-target="#my-navbar">
+        <!-- Navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                                <a href="#" class="navbar-brand">HOME</a>
+              </div><!-- Navbar Header-->
+
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                    <li><a href="#who-am-I">Who am I?</a>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Latest...<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                      <li><a href="#work">Work...</a>
+                      <li><a href="#what-is-new">What is new?</a>
+                      <li><a href="#favourite-topics">Fovourite Topics</a>
+                      <li><a href="#how-to">How to ... ?</a>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Demo<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#map-tube">Map::Tube</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">CPAN<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#cpan-recent">Recent Uploads</a></li>
+                                        <li><a href="#cpan-regulars">Regular Uploads</a></li>
+                                        <li><a href="#cpan-uploaders">Alltime Uploaders</a></li>
+                                        <li><a href="#cpan-distributions">Distributions</a></li>
+                                        <li><a href="#historical-distributions">Historical Distributions</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">GitHub<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#github-pullrequest-tracker">Pull Request Tracker</a></li>
+                                        <li><a href="#github-pullrequest">Pull Request</a></li>
+                                        <li><a href="#pullrequest-club">Pull Request Club</a></li>
+                                        <li><a href="#pullrequest-challenge">Pull Request Challenge</a></li>
+                                        <li><a href="#github-commits">Commits</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#pr-events">Pull Request</a></li>
+                                        <li><a href="#perl-weekly-challenge">Perl Weekly Challenge</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#support-patreon" title="Patreon"><img src="/images/patreon.png"/></a></li>
+                          <li><a href="https://github.com/manwar" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+                          <li><a href="http://stackoverflow.com/users/1421774/" title="Stackoverflow" target="_blank"><i class="fa fa-stack-overflow"></i></a></li>
+                          <li><a href="http://twitter.com/@cpan_author" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="http://www.linkedin.com/in/mohammadanwar" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+          </div><!-- End Container-->
+      </nav><!-- End navbar -->
+
+        <div class="container-fluid no-padding">
+            <div class = "row">
+                <div class="col-md-12">
+                    <div>
+                        <img src="/images/background.jpg" width="100%" class="img-responsive">
+                        <img src="/images/manwar.jpg" width="250px" height="250px" class="img-circle addon-image visible-sm visible-md visible-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <br/><br/>
+
+      <!-- Who am I? -->
+    <hr  id="who-am-I"/>
+      <div class="container">
+          <section>
+              <div class="page-header">
+              <h1><span class="section_header">Who am I?</span></h1>
+          </div>
+
+                <% FOREACH who_am_i_row IN who_am_i %>
+                <div class="row">
+                    <% FOREACH who_am_i_col IN who_am_i_row %>
+                        <div class="col-md-4 text-justify">
+                            <img src="<% who_am_i_col.img_src %>"
+                                 title="<% who_am_i_col.img_title %>"
+                                 class="img-responsive img-circle margin"
+                                 style="display:inline" width="50" height="50"
+                                 alt="<% who_am_i_col.img_alt %>">
+                            <br/>
+                            <small><% who_am_i_col.description %></small>
+                        </div>
+                    <% END %>
+                </div>
+                <br/>
+                <% END %>
+
+        </section>
+      </div> <!--End Container for Who am I? -->
+
+    <br/>
+
+    <!-- Support Patreon -->
+    <hr  id="support-patreon"/>
+      <div class="container">
+          <section>
+              <div class="page-header">
+              <h1><span class="section_header">Supporters on Patreon</span></h1>
+              </div>
+          </section>
+
+          <div class="panel-group">
+            <div class="panel panel-success">
+               <div class="panel-body">
+                 <strong>
+                   <p class="text-success">This section dedicates to all my Patreon supporters. I would like to thank each and every supporters for their kind gesture. It means a world to me. What ever little I have done in the last few years is because of the community supports and encouragements. You know who I am talking about. I would like to thank Gabor Szabo for suggesting Patreon. It has been amazing run so far. I am humbled.</p>
+                 </strong>
+               </div>
+             </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="panel text-center panel-default">
+                 <div class="panel-heading">
+                   <strong><a href="https://github.com/gugod">Kang-min Liu</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-info">
+                 <div class="panel-heading">
+                   <strong><a href="https://twitter.com/ActiveState">ActiveState Software</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-warning">
+                 <div class="panel-heading">
+                   <strong>Kevin Ernst</strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-danger">
+                 <div class="panel-heading">
+                   <strong><a href="http://solimano.org/">David Solimano</a></strong>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="panel text-center panel-success">
+                 <div class="panel-heading">
+                   <strong><a href="https://github.com/peelle">James Carman</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-default">
+                 <div class="panel-heading">
+                   <strong><a href="https://www.linkedin.com/in/dihnen/">David Ihnen</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-info">
+                 <div class="panel-heading">
+                   <strong><a href="https://www.linkedin.com/in/emilperhinschi/">Emil Perhinschi</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-warning">
+                 <div class="panel-heading">
+                   <strong>John Wiersba</strong>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="panel text-center panel-danger">
+                 <div class="panel-heading">
+                   <strong><a href="https://www.linkedin.com/in/mjgardner/">Mark Gardner</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-success">
+                 <div class="panel-heading">
+                   <strong>Leonardo Ruoso</strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-default">
+                 <div class="panel-heading">
+                   <strong><a href="https://www.linkedin.com/in/robert-coursen-514b4915b/">Robert Coursen</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-info">
+                 <div class="panel-heading">
+                   <strong><a href="http://raf.org">raf</a></strong>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="panel text-center panel-warning">
+                 <div class="panel-heading">
+                   <strong><a href="https://www.linkedin.com/in/jculverhouse/">Jeffrey Culverhouse</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-danger">
+                 <div class="panel-heading">
+                   <strong><a href="https://www.preshweb.co.uk/about/">David Precious</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-success">
+                 <div class="panel-heading">
+                   <strong><a href="https://www.linkedin.com/in/zahir-lalani-4940253/">Zahir Lalani</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-default">
+                 <div class="panel-heading">
+                   <strong>Håkon Hægland</strong>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="panel text-center panel-info">
+                 <div class="panel-heading">
+                   <strong>M. Monderkamp</strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="panel text-center panel-warning">
+                 <div class="panel-heading">
+                   <strong><a href="https://www.linkedin.com/in/szabgab/">Gabor Szabo</a></strong>
+                 </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="panel text-center panel-danger">
+                 <div class="panel-heading">
+                   <strong><a href="https://www.patreon.com/manwar" target="_blank">Do you want to support me?</a></strong>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+    <br/>
+
+        <!-- Work -->
+    <hr id="work"/>
+    <div class="container">
+             <section>
+               <div class="page-header">
+                   <h1><span class="section_header">Work...</span></h1>
+               </div>
+
+               <% FOREACH current_row IN current %>
+               <div class="panel-group">
+                 <% FOREACH current_col IN current_row %>
+                 <div class="panel panel-success text-center">
+                   <div class="panel-heading">
+                     <strong><a href="<% current_col.company_url %>"><% current_col.company_name %></a></strong>
+                   </div>
+                   <div class="panel-body">
+                     <small>
+                       <p class="text-success"><% current_col.job_title %></p>
+                       <p class="text-center text-primary"><% current_col.job_description %></p>
+                     </small>
+                   </div>
+                 </div>
+                 <% END %>
+               </div>
+               <% END %>
+
+               <% FOREACH work_row IN work %>
+               <div class="row">
+                 <% FOREACH work_col IN work_row %>
+                 <div class="col-sm-4">
+                   <div class="panel text-center <% work_col.header_class %>">
+                     <div class="panel-heading">
+                       <strong><a href="<% work_col.company_url %>"><% work_col.company_name %></a></strong>
+                     </div>
+                     <div class="panel-body">
+                       <small><p class="text-success"><% work_col.job_title %></p>
+                         <p class="text-justify text-primary"><% work_col.job_description %></p>
+                       </small>
+                       <br/>
+                     </div>
+                   </div>
+                 </div>
+                 <% END %>
+               </div>
+               <% END %>
+
+             </section>
+        </div><!-- End Container for "Work" -->
+    <br/>
+    <br/>
+
+        <!-- What is new? -->
+    <hr id="what-is-new"/>
+    <div class="container">
+            <section>
+              <div class="page-header">
+              <h1><span class="section_header">What is new?</span></h1>
+              </div>
+
+                <div id="what-is-new-slides" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <% FOREACH win_indicator IN win_indicators %>
+                        <li data-target="#what-is-new-slides" data-slide-to="<% win_indicator.slide_to %>" <% win_indicator.class %>></li>
+                        <% END %>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <% FOREACH win_row IN win %>
+                        <div class="item<% win_row.active %>">
+                            <div class="panel text-center <% win_row.header_class %>">
+                                <div class="panel-heading"><strong><% win_row.title %></strong></div>
+                                <div class="panel-body">
+                                  <small>
+                                    <p class="text-success">
+                                      <strong><a href="<% win_row.sub_title_url %>" target="_blank"><% win_row.sub_title_name %></a></strong>
+                                    </p>
+                                    <p class="text-primary"><% win_row.body %></p>
+                                  </small>
+                                </div>
+                            </div>
+                        </div>
+                        <% END %>
+                    </div><!-- End of Wrapper for Slides -->
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#what-is-new-slides" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#what-is-new-slides" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        </div><!-- End container for "What is new?"-->
+
+    <br/>
+    <br/>
+    <br/>
+
+        <!-- Favourite Topics -->
+    <hr id="favourite-topics"/>
+    <div class="container">
+            <section>
+              <div class="page-header">
+              <h1><span class="section_header">Favourite Topics</span></h1>
+              </div>
+
+                <div id="favourite-topics-slides" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <% FOREACH ft_indicator IN ft_indicators %>
+                        <li data-target="#favourite-topics-slides" data-slide-to="<% ft_indicator.slide_to %>" <% ft_indicator.class %>></li>
+                        <% END %>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <% FOREACH ft_row IN ft %>
+                        <div class="item<% ft_row.active %>">
+                            <div class="panel text-center <% ft_row.header_class %>">
+                              <div class="panel-heading"><strong><% ft_row.title %></strong></div>
+                              <div class="panel-body">
+                                <p class="text-success">
+                                  <strong><a href="<% ft_row.sub_title_url %>" target="_blank"><% ft_row.sub_title_name %></a></strong>
+                                </p>
+                              </div>
+                            </div>
+                        </div>
+                        <% END %>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#favourite-topics-slides" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#favourite-topics-slides" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        </div><!-- End container -->
+
+    <br/>
+    <br/>
+    <br/>
+
+        <!-- How to ...? -->
+    <hr id="how-to"/>
+    <div class="container">
+          <section>
+          <div class="page-header">
+            <h1><span class="section_header">How to ...?</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="git" href="#git_how_to" role="tab" data-toggle="tab">Git</a></li>
+               <li><a id="psql" href="#psql_how_to" role="tab" data-toggle="tab">PostgreSQL</a></li>
+            </ul>
+
+            <div id="how-to-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="git_how_to">
+                 <form class="form-horizontal">
+                   <div class="form-group">
+                     <label for="git_topic" class="col-sm-3 control-label">Topics:</label>
+                     <div class="col-sm-9">
+                       <select id="git_topic" class="form-control">
+                         <option value="">--Select topic--</option>
+                         <% FOREACH git_topic IN git_topics %>
+                         <option value="<% git_topic.id %>"><% git_topic.question %></option>
+                         <% END %>
+                       </select>
+                     </div>
+                   </div>
+                 </form>
+                 <div id="git_how_to_response" class="panel-body text-primary"></div>
+               </div>
+
+               <div class="tab-pane" id="psql_how_to">
+                 <form class="form-horizontal">
+                   <div class="form-group">
+                     <label for="psql_topic" class="col-sm-3 control-label">Topics:</label>
+                     <div class="col-sm-9">
+                       <select id="psql_topic" class="form-control">
+                         <option value="">--Select topic--</option>
+                         <% FOREACH psql_topic IN psql_topics %>
+                         <option value="<% psql_topic.id %>"><% psql_topic.question %></option>
+                         <% END %>
+                       </select>
+                     </div>
+                   </div>
+                 </form>
+                 <div id="psql_how_to_response" class="panel-body text-primary"></div>
+               </div>
+
+            </div>
+          </section>
+        </div><!-- End container -->
+
+    <br/>
+    <br/>
+    <br/>
+
+
+        <!-- Map::Tube Section -->
+    <hr id="map-tube"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">Map::Tube</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="map_tube_summary" href="#map_tube_summary_details" role="tab" data-toggle="tab">Summary</a></li>
+               <li><a id="map_tube_demo" href="#map_tube_demo_live" role="tab" data-toggle="tab">Try Me</a></li>
+            </ul>
+
+            <div id="map-tube-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="map_tube_summary_details">
+                  <div class="panel-group">
+                     <div class="panel panel-success text-center">
+                         <div class="panel-heading">
+                           <strong>
+                             <a href="http://www.ntt.com">Map::Tube - Lightweight Routing Framework</a>
+                           </strong>
+                         </div>
+                         <div class="panel-body">
+                             <small>
+                                 <p class="text-justify text-primary">
+                                   <a target="_blank" title="Map::Tube" href="https://metacpan.org/pod/Map::Tube"><strong>Map::Tube</strong></a> is one of my favourite distributions published to <strong>CPAN</strong>. It was first released on <strong>26th Oct 2010</strong>. As of Map::Tube <strong>v3.50</strong>, there have been <strong>162</strong> public releases so far. In the long journey so far, I have made many friends all along. Some even became contributors as well, which made it more fun to work on. There are <strong>39</strong> maps created using the framework as listed below.
+                                 </p>
+                             </small>
+
+                             <!-- 16:9 aspect ratio -->
+                             <div class="embed-responsive embed-responsive-16by9">
+                               <object class="embed-responsive-item" data="https://www.easymapmaker.com/map/map-tube-v3"></object>
+                             </div>
+
+                             <!--
+                             <% FOREACH dist_row IN dists %>
+                             <div class="row">
+                               <% FOREACH dist_col IN dist_row%>
+                               <div class="col-md-2">
+                                 <div class="thumbnail">
+                                   <a target="_blank" title="<% dist_col.title %>" href="https://metacpan.org/pod/<% dist_col.name %>"><% dist_col.title %></a>
+                                 </div>
+                               </div>
+                               <% END %>
+                             </div>
+                             <% END %>
+                             -->
+
+                         </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tab-pane" id="map_tube_demo_live">
+                 <form class="form-horizontal">
+                   <div class="form-group">
+                     <label for="map_name" class="col-sm-3 control-label">Map (City):</label>
+                     <div class="col-sm-9">
+                       <select id="map_name" class="form-control">
+                         <option value="">--Select map--</option>
+                         <% FOREACH map IN maps %>
+                         <option value="<% map.name %>"><% map.name %></option>
+                         <% END %>
+                       </select>
+                     </div>
+                   </div>
+                   <div class="form-group">
+                     <label for="start" class="col-sm-3 control-label">Start Station:</label>
+                     <div class="col-sm-9">
+                       <select id="start" class="form-control"></select>
+                     </div>
+                   </div>
+                   <div class="form-group">
+                     <label for="end" class="col-sm-3 control-label">End Station:</label>
+                     <div class="col-sm-9">
+                       <select id="end" class="form-control"></select>
+                     </div>
+                   </div>
+                   <div class="form-group">
+                     <label class="col-sm-3 control-label">Captcha:</label>
+                     <div class="col-sm-7">
+                       <input type="text" class="form-control" id="txt_captcha_response">
+                     </div>
+                     <label id="txt_captcha" class="col-sm-2 control-label"></label>
+                   </div>
+                   <div class="form-group">
+                     <div class="col-sm-offset-3 col-sm-9">
+                       <button id="map_tube_button" type="button" class="btn btn-default">Find Shortest Route</button>
+                     </div>
+                   </div>
+                 </form>
+
+                 <div id="shortest-route-result" class="panel-body text-primary"></div>
+
+               </div>
+
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+
+        <!-- CPAN Recent -->
+    <hr id="cpan-recent"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+            <h1><span class="section_header">CPAN Recent</span></h1>
+          </div>
+
+            <% FOREACH cr_row IN cr %>
+                <div class="row">
+                <% FOREACH cr_col IN cr_row %>
+                    <div class="col-md-3"><div class="thumbnail">
+                        <a target="_blank" title="<% cr_col.tooltip %>" href="<% cr_col.link %>"><% cr_col.name %></a>
+                    </div></div>
+                <% END %>
+                </div>
+            <% END %>
+
+          </section>
+      </div> <!--End Container-->
+
+        <!-- CPAN Regulars -->
+    <hr id="cpan-regulars"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+            <h1><span class="section_header">CPAN Regulars</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="ds" href="#daily_stats" role="tab" data-toggle="tab">Daily</a></li>
+               <li><a id="ws" href="#weekly_stats" role="tab" data-toggle="tab">Weekly</a></li>
+               <li><a id="ms" href="#monthly_stats" role="tab" data-toggle="tab">Monthly</a></li>
+            </ul>
+
+            <div id="cr-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="daily_stats"></div>
+               <div class="tab-pane" id="weekly_stats"></div>
+               <div class="tab-pane" id="monthly_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- CPAN Uploaders -->
+    <hr id="cpan-uploaders"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">CPAN Uploaders</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="cus" href="#cpan_uploaders_stats" role="tab" data-toggle="tab">All Time</a></li>
+               <li><a id="nus" href="#neocpan_uploaders_stats" role="tab" data-toggle="tab">NeoCPAN</a></li>
+            </ul>
+
+            <div id="cu-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="cpan_uploaders_stats"></div>
+               <div class="tab-pane" id="neocpan_uploaders_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- CPAN Distributions -->
+    <hr id="cpan-distributions"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">CPAN Distributions</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="ad" href="#ad_stats" role="tab" data-toggle="tab">Adopted</a></li>
+               <li><a id="pd-a-c" href="#pd_a_c_stats" role="tab" data-toggle="tab">Personal (a..c)</a></li>
+               <li><a id="pd-d-h" href="#pd_d_h_stats" role="tab" data-toggle="tab">Personal (d..h)</a></li>
+               <li><a id="pd-i-p" href="#pd_i_p_stats" role="tab" data-toggle="tab">Personal (i..p)</a></li>
+               <li><a id="pd-q-z" href="#pd_q_z_stats" role="tab" data-toggle="tab">Personal (q..z)</a></li>
+            </ul>
+
+            <div id="cd-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="ad_stats"></div>
+               <div class="tab-pane" id="pd_a_c_stats"></div>
+               <div class="tab-pane" id="pd_d_h_stats"></div>
+               <div class="tab-pane" id="pd_i_p_stats"></div>
+               <div class="tab-pane" id="pd_q_z_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- Historical Distributions -->
+    <hr id="historical-distributions"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">Historical Distributions</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="hd_10" href="#hd_10_stats" role="tab" data-toggle="tab">Top 10</a></li>
+               <li><a id="hd_20" href="#hd_20_stats" role="tab" data-toggle="tab">Top 20</a></li>
+               <li><a id="hd_30" href="#hd_30_stats" role="tab" data-toggle="tab">Top 30</a></li>
+            </ul>
+
+            <div id="hd-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="hd_10_stats"></div>
+               <div class="tab-pane" id="hd_20_stats"></div>
+               <div class="tab-pane" id="hd_30_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- GitHub Pull Request Tracker -->
+    <hr id="github-pullrequest-tracker"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">GitHub Pull Request Tracker</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="pr_tracker_summary" href="#pr_tracker_summary_stats" role="tab" data-toggle="tab">Summary</a></li>
+               <li><a id="author_by_pr"   href="#author_by_pr_stats"   role="tab" data-toggle="tab">Author By PR</a></li>
+               <li><a id="author_by_repo" href="#author_by_repo_stats" role="tab" data-toggle="tab">Author By Repository</a></li>
+            </ul>
+
+            <div id="pr-tracker-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="pr_tracker_summary_stats"></div>
+               <div class="tab-pane" id="author_by_pr_stats"></div>
+               <div class="tab-pane" id="author_by_repo_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- GitHub Pull Request -->
+    <hr id="github-pullrequest"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">GitHub Pull Request</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="pr_summary" href="#pr_summary_stats" role="tab" data-toggle="tab">Summary</a></li>
+               <li><a id="pr_2020" href="#pr_2020_stats" role="tab" data-toggle="tab">2020</a></li>
+               <li><a id="pr_2019" href="#pr_2019_stats" role="tab" data-toggle="tab">2019</a></li>
+               <li><a id="pr_2018" href="#pr_2018_stats" role="tab" data-toggle="tab">2018</a></li>
+               <li><a id="pr_2017" href="#pr_2017_stats" role="tab" data-toggle="tab">2017</a></li>
+               <li><a id="pr_2016" href="#pr_2016_stats" role="tab" data-toggle="tab">2016</a></li>
+               <li><a id="pr_2015" href="#pr_2015_stats" role="tab" data-toggle="tab">2015</a></li>
+            </ul>
+
+            <div id="pr-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="pr_summary_stats"></div>
+               <div class="tab-pane" id="pr_2020_stats"></div>
+               <div class="tab-pane" id="pr_2019_stats"></div>
+               <div class="tab-pane" id="pr_2018_stats"></div>
+               <div class="tab-pane" id="pr_2017_stats"></div>
+               <div class="tab-pane" id="pr_2016_stats"></div>
+               <div class="tab-pane" id="pr_2015_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- Perl Weekly Challenge -->
+    <hr id="perl-weekly-challenge"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">Perl Weekly Challenge</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="pwc_leaders" href="#pwc_leaders_stats" role="tab" data-toggle="tab">Leaders</a></li>
+            </ul>
+
+            <div id="pwc-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="pwc_leaders_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- Pull Request Club -->
+        <hr id="pullrequest-club"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">Pull Request Club</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="prclub_summary" href="#prclub_summary_stats" role="tab" data-toggle="tab">Summary</a></li>
+               <li><a id="prclub_2020" href="#prclub_2020_stats" role="tab" data-toggle="tab">2020</a></li>
+               <li><a id="prclub_2019" href="#prclub_2019_stats" role="tab" data-toggle="tab">2019</a></li>
+            </ul>
+
+            <div id="prclub-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="prclub_summary_stats"></div>
+               <div class="tab-pane" id="prclub_2020_stats"></div>
+               <div class="tab-pane" id="prclub_2019_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- Pull Request Challenge -->
+        <hr id="pullrequest-challenge"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">Pull Request Challenge</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="prc_summary" href="#prc_summary_stats" role="tab" data-toggle="tab">Summary</a></li>
+               <li><a id="prc_2018" href="#prc_2018_stats" role="tab" data-toggle="tab">2018</a></li>
+               <li><a id="prc_2017" href="#prc_2017_stats" role="tab" data-toggle="tab">2017</a></li>
+               <li><a id="prc_2016" href="#prc_2016_stats" role="tab" data-toggle="tab">2016</a></li>
+               <li><a id="prc_2015" href="#prc_2015_stats" role="tab" data-toggle="tab">2015</a></li>
+            </ul>
+
+            <div id="prc-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="prc_summary_stats"></div>
+               <div class="tab-pane" id="prc_2018_stats"></div>
+               <div class="tab-pane" id="prc_2017_stats"></div>
+               <div class="tab-pane" id="prc_2016_stats"></div>
+               <div class="tab-pane" id="prc_2015_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- GitHub Commits -->
+    <hr id="github-commits"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">GitHub Commits</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="gc_summary" href="#gc_summary_stats" role="tab" data-toggle="tab">Summary</a></li>
+               <li><a id="gc_2020" href="#gc_2020_stats" role="tab" data-toggle="tab">2020</a></li>
+               <li><a id="gc_2019" href="#gc_2019_stats" role="tab" data-toggle="tab">2019</a></li>
+               <li><a id="gc_2018" href="#gc_2018_stats" role="tab" data-toggle="tab">2018</a></li>
+               <li><a id="gc_2017" href="#gc_2017_stats" role="tab" data-toggle="tab">2017</a></li>
+               <li><a id="gc_2016" href="#gc_2016_stats" role="tab" data-toggle="tab">2016</a></li>
+               <li><a id="gc_2015" href="#gc_2015_stats" role="tab" data-toggle="tab">2015</a></li>
+               <li><a id="gc_2014" href="#gc_2014_stats" role="tab" data-toggle="tab">2014</a></li>
+            </ul>
+
+            <div id="gc-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="gc_summary_stats"></div>
+               <div class="tab-pane" id="gc_2020_stats"></div>
+               <div class="tab-pane" id="gc_2019_stats"></div>
+               <div class="tab-pane" id="gc_2018_stats"></div>
+               <div class="tab-pane" id="gc_2017_stats"></div>
+               <div class="tab-pane" id="gc_2016_stats"></div>
+               <div class="tab-pane" id="gc_2015_stats"></div>
+               <div class="tab-pane" id="gc_2014_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- PR Events -->
+        <hr id="pr-events"/>
+
+    <div class="container">
+          <section>
+          <div class="page-header">
+          <h1><span class="section_header">Pull Request Events</span></h1>
+          </div>
+
+            <ul class="nav nav-tabs" role="tablist">
+               <li class="active"><a id="hacktoberfest" href="#hacktoberfest_stats" role="tab" data-toggle="tab">Hacktoberfest</a></li>
+               <li><a id="pullrequest_24" href="#pullrequest_24_stats" role="tab" data-toggle="tab">24 Pull Request</a></li>
+            </ul>
+
+            <div id="pr-events-spinner" class="spinner"><img src="/images/ajax-loader.gif" alt="Loading..."/></div>
+
+            <div class="tab-content">
+               <div class="tab-pane active in" id="hacktoberfest_stats"></div>
+               <div class="tab-pane" id="pullrequest_24_stats"></div>
+            </div>
+          </section>
+      </div> <!--End Container-->
+
+        <!-- Contact -->
+        <!--hr id="contact"/>
+        <div class="container">
+            <section>
+            <div class="page-header">
+                <h2>Contact Me</h2>
+            </div><!-- End Page Header -->
+
+            <!--div id="contact-response" class="text-success"></div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="contact-form" action="/contact" class="form-horizontal">
+                        <div class="form-group">
+                            <label for="user-name" class="col-lg-2 control-label text-primary">Name</label>
+                               <div class="col-lg-10">
+                                   <input type="text" class="form-control" id="user-name" name="user-name" placeholder="Enter your name">
+                               </div>
+                        </div><!-- End form group -->
+
+                        <!--div class="form-group">
+                            <label for="user-email" class="col-lg-2 control-label text-primary">Email</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="user-email" name="user-email" placeholder="Enter your email address">
+                            </div>
+                        </div><!-- End form group -->
+
+                        <!--div class="form-group">
+                            <label for="user-email-subject" class="col-lg-2 control-label text-primary">Subject</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="user-email-subject" name="user-email-subject" placeholder="Enter your email subject">
+                            </div>
+                        </div><!-- End form group -->
+
+                        <!--div class="form-group">
+                            <label for="user-message" class="col-lg-2 control-label text-primary">Message</label>
+                            <div class="col-lg-10">
+                                <textarea name="user-message" id="user-message" name="user-message" class="form-control" cols="20" rows="10" placeholder="Enter your message"></textarea>
+                            </div>
+                        </div><!-- End form group -->
+
+                        <!--div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- End the row -->
+            <!--/section>
+        </div><!-- End Container -->
+
+<!-- Footer -->
+    <hr>
+    <footer>
+    <div class="container text-center">
+    <a href="https://github.com/manwar" target="_blank"><i class="fa fa-github"></i></a>
+        &nbsp;
+    <a href="http://stackoverflow.com/users/1421774/" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+        &nbsp;
+    <a href="http://twitter.com/@cpan_author" target="_blank"><i class="fa fa-twitter"></i></a>
+        &nbsp;
+    <a href="http://www.linkedin.com/in/mohammadanwar" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <br/>
+        <a href="https://perlmaven.com/perl-tutorial" target="_blank">[Perl Tutorial]</a>
+        <br/>
+        <a href="https://perlweeklychallenge.org/" target="_blank">[Perl Weekly Challenge]</a>
+        <br/>
+    <small>&copy; Copyright 2015 - 2020 www.manwar.org</small>
+        </div>
+    </footer>
+    <hr>
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+    <script type="text/javascript" src="<% request.uri_base %>/javascripts/jquery.js"></script>
+    <script type="text/javascript" src="<% request.uri_base %>/javascripts/manwar.js"></script>
+    <script type="text/javascript">
+        $("#contact-form").submit(function(event) {
+            /* Get form data */
+            var $form   = $(this);
+            var name    = $form.find('input[name="user-name"]').val();
+            var email   = $form.find('input[name="user-email"]').val();
+            var subject = $form.find('input[name="user-email-subject"]').val();
+            var message = $form.find('textarea[name="user-message"]').val();
+            var url     = $form.attr('action');
+
+            /* Sending the data using post */
+            var posting = $.post(url, {
+                uname: name,
+                uemail: email,
+                usubject: subject,
+                umessage: message
+            });
+
+            /* Display the response */
+            posting.done(function(data) {
+                $("#contact-response").empty().append(data);;
+            });
+
+            //$.post(url, $("#contact-form").serialize()).done(function(data) { $("#contact-response").empty().append(data); });
+        });
+    </script>
+    <script type="text/javascript" src="<% request.uri_base %>/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<% request.uri_base %>/javascripts/bootstrap-dialog.min.js"></script>
+    <script type="text/javascript" src="<% request.uri_base %>/javascripts/highstock.js"></script>
+    <script type="text/javascript" src="<% request.uri_base %>/javascripts/data.js"></script>
+    <script type="text/javascript" src="<% request.uri_base %>/javascripts/drilldown.js"></script>
+    <script type="text/javascript" src="<% request.uri_base %>/javascripts/exporting.js"></script>
+
+</body>
+</html>

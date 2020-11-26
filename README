@@ -1,0 +1,18 @@
+INSTALLATION:
+
+    $ perl Makefile.PL
+    $ make
+    $ make test
+    $ sudo make install
+
+RUN:
+
+    $ plackup bin/app.psgi
+
+EXAMPLE:
+
+    a) Dancer2 Cookbook showing the power of Dancer2.
+       https://github.com/manwar/dancer2-cookbook
+
+    b) Fully functional website using Dancer2, Template toolkit.
+       https://github.com/manwar/www.manwar.org
